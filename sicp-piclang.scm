@@ -29,7 +29,8 @@
 (use-modules (pict))
 
 (define (make-vect x y)
-  ;; a vector is a list of two coordinates. An alternate representation would be a cons pair.
+  ;; a vector is a list of two coordinates. An alternate representation
+  ;; would be a cons pair.
   (list x y))
 
 (define xcor-vect car)
@@ -108,8 +109,9 @@
 ;; originally (for-each). Thus the final result would have been thrown away.
 
 (define (transform-painter painter origin corner1 corner2)
-  ;; produces a new painter by applying the supplied painter to an affine transformation specified by the
-  ;; three argument vectors. Is it possible to merge frame-coord-map and transform-painter somehow?
+  ;; produces a new painter by applying the supplied painter to an affine
+  ;; transformation specified by the three argument vectors. Is it possible to
+  ;; merge frame-coord-map and transform-painter somehow?
   (lambda (frame)
     (let* ((m (frame-coord-map frame))
            (new-origin (m origin)))
