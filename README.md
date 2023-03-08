@@ -1,6 +1,8 @@
 # guile-sicp-piclang
-An implementation of Henderson-Escher picture language from Structure and
-Interpretation of Computer Programs for Guile Scheme. W.I.P.
+A Guile Scheme implementation of the Henderson-Escher picture language, as seen
+in [Structure and Interpretation of Computer Programs Section
+2.2.4](http://sarabander.github.io/sicp/html/2_002e2.xhtml#g_t2_002e2_002e4).
+W.I.P.
 
 This implementation makes it possible to run code examples from the book's
 Picture Language section without having to implement much of the language
